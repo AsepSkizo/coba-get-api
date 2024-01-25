@@ -1,5 +1,6 @@
 $("#search-button").on("click", function () {
   //   console.log($("#search-input").val());
+  $("#anime-list").html("");
   $.ajax({
     type: "get",
     url: "https://api.jikan.moe/v4/anime",
